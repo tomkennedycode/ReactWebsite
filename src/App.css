@@ -4,6 +4,10 @@
   border-bottom: 2px solid black;  
 }
 
+.borderBottom {
+  border-bottom: 2px solid black;  
+}
+
 .App {
   text-align: center;
 }
