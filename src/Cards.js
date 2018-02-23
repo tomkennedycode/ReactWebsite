@@ -1,32 +1,18 @@
 import React from 'react';
-import { Row, Card, CardImg, CardText, Col, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Row, Card, CardText, Col, CardTitle, Button } from 'reactstrap';
 
 export default class Cards extends React.Component { 
         render() {
         return (
-            <Row>
+            <Row className="borderBottom">
             <Col sm="3">
-              <Card body>
+              <Card body className="mb-4">
                 <CardTitle>Special Title Treatment</CardTitle>
                 <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                 <Button>Go somewhere</Button>
               </Card>
             </Col>
-            <Col sm="3">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-            <Col sm="3">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-            <Col sm="3">
+            <Col sm="3" className="mb-4">
               <Card body>
                 <CardTitle>Special Title Treatment</CardTitle>
                 <CardText>With supporting text below as a natural lead-in to additional content.</CardText>

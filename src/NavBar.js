@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import * as Scroll from 'react-scroll';
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default class NavBar extends Component {
+
       constructor(props) {
         super(props);
     
@@ -18,6 +20,11 @@ export default class NavBar extends Component {
           collapsed: !this.state.collapsed
         });
       }
+
+      scrollTo() {
+        scroll.scrollTo(1000);
+      }
+
       render() {
         return (
           <div>
@@ -27,7 +34,7 @@ export default class NavBar extends Component {
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink >Test</NavLink>
+                    <NavLink onClick={this.scrollTo}>Contact Me</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink >Test</NavLink>
