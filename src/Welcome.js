@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Jumbotron, Button } from 'reactstrap';
 
-export default class HomepageBody extends React.Component {
+export default class Welcome extends React.Component {
     render() {
         return (
             <div>
