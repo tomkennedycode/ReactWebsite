@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import NavBar from './NavBar.js';
 import Welcome from './Welcome.js';
-import Cards from './Cards.js';
 import ContactMe from './ContactMe.js';
 import Footer from './Footer.js';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -16,7 +15,6 @@ class Homepage extends React.Component {
             <div className="container">
                 <NavBar />
                 <Welcome />
-                <Cards />
                 <ContactMe />
                 <Footer />
             </div>

@@ -29,15 +29,12 @@ export default class NavBar extends Component {
         return (
           <div>
             <Navbar color="faded" light className="navBarStyle">
-              <NavbarBrand href="/" className="mr-auto">Tom Kennedy</NavbarBrand>
+              <NavbarBrand href="/" className="mr-auto header font">Tom Kennedy</NavbarBrand>
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink onClick={this.scrollTo}>Contact Me</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink >Test</NavLink>
+                    <NavLink onClick={this.scrollTo} className="font">Contact Me</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>

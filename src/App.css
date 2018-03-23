@@ -1,11 +1,52 @@
+#root{
+  background-color: #2a2a2a;
+}
+
+.header{
+  font-family: Calibri;
+}
+
+.font {
+  font-family: Calibri;
+  color: #cacaca !important;
+}
+
+.welcomeHeader{
+  text-align: center;
+  color: #cacaca;
+  font-family: Calibri;
+}
+
+p {
+  color: #cacaca;
+}
+
+label {
+  color: #cacaca;
+}
+
+.jumbotron {
+  background: transparent !important;
+  background-color: #cacaca;
+}
+
+.the-footer-copyright{
+  color: #cacaca;
+}
+
 .navBarStyle{
-  font-family: 'open sans';
-  background-color: #e9ecef;
-  border-bottom: 2px solid black;  
+  font-family: Calibri;
+  border-bottom: 2px solid #cacaca;
+  background-color: #2a2a2a;
+  color: #cacaca; 
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  color: #cacaca !important;
 }
 
 .borderBottom {
-  border-bottom: 2px solid black;  
+  border-bottom: 2px solid #cacaca;  
 }
 
 .App {

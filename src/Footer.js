@@ -18,6 +18,7 @@ export default class Footer extends React.Component {
               <TheFooterStyle/>
               <TheFooter>
                 <CopyRight year='2018' holder='Tom Kennedy'/>
+                <p><i>Made in react.js</i></p>
                 <Button onClick={this.scrollToTop}>Back to top?</Button>
               </TheFooter>
             </TheRouter>
