@@ -6,14 +6,10 @@ export default class Welcome extends React.Component {
     render() {
         return (
             <div>
-                <Jumbotron className="borderBottom">
-                    <h1 className="display-3">Welcome</h1>
-                    <p className="lead"></p>
+                <Jumbotron className="borderBottom font">
+                    <h1 className="welcomeHeader">Welcome to my portfolio</h1>
                     <hr className="my-2" />
-                    <p>Tom</p>
-                    <p className="lead">
-                    <Button color="primary">Hi, im a button</Button>
-                    </p>
+                    <p>Hi! My name's Tom. I am a young and commited web developer with good experience inside a small web development team. Always thinking of new ideas and researching the latest technology when it comes to web development. I have worked on projects that included HTML, CSS, Javascript, React and C# in a high pressure environment.  </p>
                 </Jumbotron>
             </div>
         );

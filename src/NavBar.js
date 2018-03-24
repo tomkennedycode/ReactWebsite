@@ -27,7 +27,7 @@ export default class NavBar extends Component {
 
       render() {
         return (
-          <div>
+          <div className="mx-auto">
             <Navbar color="faded" light className="navBarStyle">
               <NavbarBrand href="/" className="mr-auto header font">Tom Kennedy</NavbarBrand>
               <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />

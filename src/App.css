@@ -1,3 +1,5 @@
+/* MAIN */
+
 #root{
   background-color: #2a2a2a;
 }
@@ -25,14 +27,7 @@ label {
   color: #cacaca;
 }
 
-.jumbotron {
-  background: transparent !important;
-  background-color: #cacaca;
-}
-
-.the-footer-copyright{
-  color: #cacaca;
-}
+/*NAVBAR CSS */
 
 .navBarStyle{
   font-family: Calibri;
@@ -41,6 +36,10 @@ label {
   color: #cacaca; 
 }
 
+.custom-toggler.navbar-toggler {
+  background-color: #cacaca !important;
+} 
+
 .navbar-default .navbar-toggle .icon-bar {
   color: #cacaca !important;
 }
@@ -48,6 +47,75 @@ label {
 .borderBottom {
   border-bottom: 2px solid #cacaca;  
 }
+
+/* FOOTER */
+
+.the-footer-copyright{
+  color: #cacaca;
+}
+
+/* WELCOME */
+
+.jumbotron {
+  background: transparent !important;
+  background-color: #cacaca;
+}
+
+
+
+/* CARD CSS */
+
+.card-body {
+  background-color: #2a2a2a;
+}
+
+.card-text {
+  color: #cacaca;
+}
+
+.card-subtitle {
+  color: #cacaca;
+}
+
+.card-title {
+  color: #cacaca;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2a2a2a;
+}
+
+.projectContainer:hover .projectOverlay {
+  opacity: 1;
+}
+
+.overlayText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* GENRAL */
 
 .App {
   text-align: center;
