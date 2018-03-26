@@ -4,7 +4,7 @@ import './index.css';
 import NavBar from './NavBar.js';
 import Welcome from './Welcome.js';
 import Projects from './Projects.js';
-import ContactMe from './ContactMe.js';
+import SocialIcons from './SocialIcons.js';
 import Footer from './Footer.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
@@ -18,7 +18,7 @@ class Homepage extends React.Component {
                     <NavBar />
                     <Welcome />
                     <Projects />
-                    <ContactMe />
+                    <SocialIcons />
                     <Footer />
                 </div>
             </div>

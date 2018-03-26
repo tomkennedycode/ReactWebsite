@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
         return (
             <div>
                 <h1 className="welcomeHeader">My Projects</h1>
-                <CardGroup>
+                <CardGroup className="mb-4">
                 <Card>
                     <div className="projectContainer">
                         <a href="http://www.medwayyouthcouncil.co.uk/" target="_blank">
