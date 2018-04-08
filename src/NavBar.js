@@ -34,7 +34,13 @@ export default class NavBar extends Component {
               <Collapse isOpen={!this.state.collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink onClick={this.scrollTo} className="font">Contact Me</NavLink>
+                    <NavLink onClick={this.scrollTo} className="font">Connect With Me</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink onClick={this.scrollTo} className="font">My Projects</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink onClick={this.scrollTo} className="font">My Skills and Education</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>

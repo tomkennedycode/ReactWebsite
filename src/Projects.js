@@ -5,8 +5,8 @@ import { Card, Button, CardImg, CardTitle, CardText, CardGroup, CardSubtitle, Ca
 export default class Projects extends React.Component {
     render() {
         return (
-            <div>
-                <h1 className="welcomeHeader">My Projects</h1>
+            <div className="borderBottom">
+                <h1 className="welcomeHeader headerMargin">My Projects</h1>
                 <CardGroup className="mb-4">
                 <Card>
                     <div className="projectContainer">

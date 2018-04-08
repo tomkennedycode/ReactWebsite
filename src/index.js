@@ -5,6 +5,7 @@ import NavBar from './NavBar.js';
 import Welcome from './Welcome.js';
 import Projects from './Projects.js';
 import SocialIcons from './SocialIcons.js';
+import SkillsAndEducation from './SkillsAndEducation.js';
 import Footer from './Footer.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
@@ -17,8 +18,9 @@ class Homepage extends React.Component {
                 <div className="container">
                     <NavBar />
                     <Welcome />
-                    <Projects />
                     <SocialIcons />
+                    <Projects />
+                    <SkillsAndEducation />
                     <Footer />
                 </div>
             </div>
