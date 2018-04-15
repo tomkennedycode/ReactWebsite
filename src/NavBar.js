@@ -1,51 +1,33 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { slide as Menu } from 'react-burger-menu'
 import * as Scroll from 'react-scroll';
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default class NavBar extends Component {
+  showSettings (event) {
+    event.preventDefault();
+  }
 
-      constructor(props) {
-        super(props);
-    
-        this.toggleNavbar = this.toggleNavbar.bind(this);
-        this.state = {
-          collapsed: true
-        };
-      }
-    
-      toggleNavbar() {
-        this.setState({
-          collapsed: !this.state.collapsed
-        });
-      }
+  scrollToConnect() {
+    scroll.scrollTo(285);
+  }
 
-      scrollTo() {
-        scroll.scrollTo(1000);
-      }
+  scrollToProjects() {
+    scroll.scrollTo(470);
+  }
 
-      render() {
-        return (
-          <div className="mx-auto">
-            <Navbar color="faded" light className="navBarStyle">
-              <NavbarBrand href="/" className="mr-auto header font">Tom Kennedy</NavbarBrand>
-              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-              <Collapse isOpen={!this.state.collapsed} navbar>
-                <Nav navbar>
-                  <NavItem>
-                    <NavLink onClick={this.scrollTo} className="font">Connect With Me</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink onClick={this.scrollTo} className="font">My Projects</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink onClick={this.scrollTo} className="font">My Skills and Education</NavLink>
-                  </NavItem>
-                </Nav>
-              </Collapse>
-            </Navbar>
-          </div>
+  scrollToSkills() {
+    scroll.scrollTo(1000);
+  }
+
+  render () {
+    return (
+      <Menu width={ 400 } bodyClassName={ "font" }>
+        <a onClick={this.scrollToConnect} className="menu-item" >Connect With Me</a>
+        <a onClick={this.scrollToProjects} className="menu-item" >My Projects</a>
+        <a onClick={this.scrollToSkills} className="menu-item" >My Skills and Education</a>
+      </Menu>
     );
   }
 }

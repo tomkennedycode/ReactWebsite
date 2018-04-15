@@ -33,23 +33,63 @@ label {
 
 /*NAVBAR CSS */
 
-.navBarStyle{
+.menu-item {
   font-family: Calibri;
-  border-bottom: 2px solid #cacaca;
-  background-color: #2a2a2a;
-  color: #cacaca; 
-}
-
-.custom-toggler.navbar-toggler {
-  background-color: #cacaca !important;
-} 
-
-.navbar-default .navbar-toggle .icon-bar {
-  color: #cacaca !important;
+  color: #2a2a2a !important;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: crosshair;
 }
 
 .borderBottom {
   border-bottom: 2px solid #cacaca;  
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #cacaca;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #2a2a2a;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #cacaca;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  bottom: 0;
+  left: 0;
 }
 
 /* FOOTER */
