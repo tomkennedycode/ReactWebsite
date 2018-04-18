@@ -5,7 +5,7 @@ import { Card, Button, CardImg, CardTitle, CardText, CardGroup, CardSubtitle, Ca
 export default class Projects extends React.Component {
     render() {
         return (
-            <div className="borderBottom">
+            <div>
                 <h1 className="welcomeHeader headerMargin">My Projects</h1>
                 <CardGroup className="mb-4">
                 <Card>
@@ -54,6 +54,7 @@ export default class Projects extends React.Component {
                     </CardBody>
                 </Card>
                 </CardGroup>
+                <hr className="my-2" />
             </div>
         );
     }

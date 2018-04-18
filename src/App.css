@@ -8,6 +8,10 @@
   font-family: Calibri;
 }
 
+hr {
+  background-color: #cacaca !important;
+}
+
 .font {
   font-family: Calibri;
   color: #cacaca !important;
