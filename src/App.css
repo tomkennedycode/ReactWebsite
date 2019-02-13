@@ -31,6 +31,12 @@ p {
   color: #cacaca;
 }
 
+h2 {
+    text-align: center;
+    color: #cacaca !important;
+    font-family: Calibri;
+}
+
 label {
   color: #cacaca;
 }
